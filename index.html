@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>GifTastic</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="junbotron bg-dark text-white">
+      <h1>Dancing Gifs</h1>
+      <h4>
+        Click a button to display a Gif of a dance move
+        <br />
+        Click the Gif to play and pause
+        <br />
+        Search to create your own button
+      </h4>
+    </div>
+    <!-- This is where we will request data -->
+
+    <form class="form-inline" id="search">
+      <div class="form-group">
+        <label for="searchInput">Create a button: </label>
+        <input type="text" id="searchInput" />
+      </div>
+      <!-- Submit button -->
+      <input
+        id="createButton"
+        type="submit"
+        class="btn btn-light"
+        value="submit"
+      />
+    </form>
+
+    <!-- This is where the buttons will be displayed and added -->
+    <div class="buttons">
+      <div class="row">
+        <div class="container">
+          <div class="btn btn-warning" data-search="milly rock">
+            milly rock
+          </div>
+          <div class="btn btn-warning" data-search="moon walk">
+            moon walk
+          </div>
+          <div class="btn btn-warning" data-search="floss">
+            floss
+          </div>
+          <div class="btn btn-warning" data-search="dab">
+            dab
+          </div>
+          <div class="btn btn-warning" data-search="break dance">
+            break dance
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="container">
+        <!-- This is where the gifs will populate -->
+        <span><div class="gifArea"></div></span>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
