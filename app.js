@@ -1,5 +1,7 @@
 $(document).ready(function() {
+  //array of dance moves
   var topics = ["milly rock", "moon walk", "floss", "dab", "break dance"];
+  //creating a function called clickButton
   function clickButton() {
     //Makes the button clickable
     $(".btn").on("click", function() {
